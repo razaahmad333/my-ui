@@ -1,0 +1,27 @@
+{
+  "name": "my-ui",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Minimal library to write usable html components",
+  "main": "index.js",
+  "scripts": {
+    "start:server": "live-server dist/index.html",
+    "start:watch": "nodemon --watch app -e html --exec node core/index.js",
+    "start": "npm run start:watch & npm run start:server"
+  },
+  "keywords": [
+    "html",
+    "components"
+  ],
+  "author": "Ahmad Raa",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "parse5": "^7.1.2",
+    "prettier": "^3.0.3"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "nodemon": "^3.0.1"
+  }
+}
